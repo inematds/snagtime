@@ -5,6 +5,10 @@
   <p>A free, self-hostable scheduling app for availability, booking links, calendar sync, email notifications, and test payments.</p>
 </div>
 
+## 📖 Guia de uso
+
+Guia completo (landing + passo a passo): **https://inematds.github.io/snagtime/guia/**
+
 ## What SnagTime does
 
 SnagTime gives you the source code for your own scheduling system. You can run it locally for free, customize it, and host it on infrastructure you control.

@@ -7,9 +7,9 @@
   <p>A free, self-hostable scheduling app for availability, booking links, calendar sync, email notifications, and test payments.</p>
 </div>
 
-## 📖 Guia de uso
+## 📖 User guide
 
-Guia completo (landing + passo a passo): **https://inematds.github.io/snagtime/guia/**
+Complete guide (landing page + step-by-step instructions): **https://inematds.github.io/snagtime/guia/en/**
 
 ## What SnagTime does
 

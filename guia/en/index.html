@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="pt-BR">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>SnagTime — agendamento self-hosted, do seu jeito</title>
-<meta content="SnagTime é um app de agendamento gratuito e self-hostable: disponibilidade, links de booking, Google Calendar, e-mails SMTP e pagamentos Stripe em modo teste. Roda local com SQLite em cinco minutos." name="description"/>
+<title>SnagTime — self-hosted scheduling, your way</title>
+<meta content="SnagTime is a free, self-hostable scheduling app: availability, booking links, Google Calendar, SMTP email, and Stripe test-mode payments. Runs locally with SQLite in five minutes." name="description"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
@@ -91,7 +91,7 @@
   table.tbl td{color:var(--mut)}
 </style>
 <link href="https://inematds.github.io/snagtime/guia/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/snagtime/guia/en/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/snagtime/guia/es/" hreflang="es" rel="alternate"/></head>
-<body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="./" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="en/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="es/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../es/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <nav><div class="wrap">
 <a class="brand" href="#top"><span class="emoji">📅</span> SnagTime</a>
 <span class="sep">|</span>
@@ -101,13 +101,13 @@
 <a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a>
 </span>
 <div class="links">
-<a class="sec" href="#oque">O que é</a>
-<a class="sec" href="#fluxo">Como funciona</a>
-<a class="sec" href="#pre">Pré-requisitos</a>
-<a class="sec" href="#guia">Guia de uso</a>
-<a class="sec" href="#integracoes">Integrações</a>
+<a class="sec" href="#oque">What it is</a>
+<a class="sec" href="#fluxo">How it works</a>
+<a class="sec" href="#pre">Prerequisites</a>
+<a class="sec" href="#guia">User guide</a>
+<a class="sec" href="#integracoes">Integrations</a>
 <a class="sec" href="#roadmap">Status</a>
-<button aria-label="Alternar tema" class="tgl" id="themeToggle" title="Alternar tema">🌙</button>
+<button aria-label="Switch theme" class="tgl" id="themeToggle" title="Switch theme">🌙</button>
 <a class="btn" href="https://github.com/inematds/snagtime" rel="noopener" target="_blank">GitHub</a>
 </div>
 </div></nav>
@@ -115,137 +115,137 @@
 <div class="glow"></div>
 <div class="wrap">
 <div>
-<span class="chip">Agendamento self-hosted · MIT</span>
-<h1>Seu próprio sistema de <span class="amb">agendamento</span>, rodando na sua máquina.</h1>
-<p class="lead">SnagTime é o código-fonte de um app de agendamento completo: disponibilidade, links públicos de booking, Google Calendar, e-mails e pagamentos em modo teste. Sobe local em cinco minutos, sem credencial nenhuma.</p>
+<span class="chip">Self-hosted scheduling · MIT</span>
+<h1>Your own system for <span class="amb">scheduling</span>, running on your machine.</h1>
+<p class="lead">SnagTime is the source code for a complete scheduling app: availability, public booking links, Google Calendar, emails, and test-mode payments. Get it running locally in five minutes, with no credentials.</p>
 <div class="cta">
-<a class="btn" href="#guia">Começar o guia</a>
-<a class="btn ghost" href="https://github.com/inematds/snagtime" rel="noopener" target="_blank">Ver no GitHub</a>
+<a class="btn" href="#guia">Start the guide</a>
+<a class="btn ghost" href="https://github.com/inematds/snagtime" rel="noopener" target="_blank">View on GitHub</a>
 </div>
 </div>
-<figure><img alt="Capa do projeto SnagTime" src="assets/hero.png"/></figure>
+<figure><img alt="SnagTime project cover" src="../assets/hero.png"/></figure>
 </div>
 </header>
 <section id="oque"><div class="wrap">
-<span class="chip">O que é</span>
+<span class="chip">What it is</span>
 <h2>Snag a time. Get booked.</h2>
-<p class="sub">Um app de agendamento livre (licença MIT) e self-hostable. Em vez de assinar um SaaS de booking, você roda o seu — e customiza o que quiser.</p>
+<p class="sub">A free and self-hostable scheduling app (MIT license). Instead of subscribing to a booking SaaS, you run your own—and customize whatever you want.</p>
 <div class="grid g3">
-<div class="card"><h3>🆓 Demo local sem credencial</h3><p>Modo gratuito com SQLite, calendário local, caixa de e-mail local e pagamentos stub. Não chama Google nem Stripe.</p></div>
-<div class="card"><h3>🔗 Booking de verdade</h3><p>Tipos de evento com várias durações, disponibilidade semanal, exceções por data, buffers, antecedência mínima, janela de agendamento e links públicos com fuso horário.</p></div>
-<div class="card"><h3>🔒 Produção endurecida</h3><p>Arquitetura PostgreSQL 18 com row-level security forçada, credenciais separadas de app e worker, TLS verificado no banco e ingress autenticado.</p></div>
+<div class="card"><h3>🆓 Local demo with no credentials</h3><p>Free mode with SQLite, a local calendar, a local email inbox, and stub payments. It doesn't call Google or Stripe.</p></div>
+<div class="card"><h3>🔗 Real booking</h3><p>Event types with multiple durations, weekly availability, date-specific exceptions, buffers, minimum notice, a scheduling window, and public links with time zone support.</p></div>
+<div class="card"><h3>🔒 Hardened production</h3><p>PostgreSQL 18 architecture with forced row-level security, separate app and worker credentials, verified TLS to the database, and authenticated ingress.</p></div>
 </div>
 </div></section>
 <section id="fluxo"><div class="wrap">
-<span class="chip">Como funciona</span>
-<h2>Do setup ao agendamento confirmado</h2>
-<p class="sub">O fluxo do organizador até o convidado — tudo dentro da sua instalação.</p>
+<span class="chip">How it works</span>
+<h2>From setup to confirmed scheduling</h2>
+<p class="sub">The flow from organizer to guest—all within your installation.</p>
 <div class="flow">
 <span>npm run setup</span><span class="arr">→</span>
 <span>Workspace</span><span class="arr">→</span>
-<span>Tipo de evento</span><span class="arr">→</span>
-<span>Disponibilidade</span><span class="arr">→</span>
-<span>Link público</span><span class="arr">→</span>
-<span>Convidado agenda</span><span class="arr">→</span>
-<span>Confirmação por e-mail</span><span class="arr">→</span>
-<span>Remarcar / cancelar</span>
+<span>Event type</span><span class="arr">→</span>
+<span>Availability</span><span class="arr">→</span>
+<span>Public link</span><span class="arr">→</span>
+<span>Guest schedules</span><span class="arr">→</span>
+<span>Email confirmation</span><span class="arr">→</span>
+<span>Reschedule / cancel</span>
 </div>
 <div class="grid g3" style="margin-top:26px">
-<div class="card"><h3>👥 Workspaces</h3><p>Cadastro, login, recuperação de senha, verificação de e-mail, membros, convites e troca de workspace.</p></div>
-<div class="card"><h3>🗓️ Agenda</h3><p>Checagem de free/busy no Google Calendar e criação do evento no calendário do organizador.</p></div>
-<div class="card"><h3>🎨 Marca</h3><p>Branding do workspace: cor de destaque, imagem de perfil e logo enviada por upload.</p></div>
+<div class="card"><h3>👥 Workspaces</h3><p>Sign-up, login, password recovery, email verification, members, invitations, and workspace switching.</p></div>
+<div class="card"><h3>🗓️ Schedule</h3><p>Google Calendar free/busy check and event creation on the organizer's calendar.</p></div>
+<div class="card"><h3>🎨 Branding</h3><p>Workspace branding: accent color, profile image, and uploaded logo.</p></div>
 </div>
 </div></section>
 <section id="pre"><div class="wrap">
-<span class="chip">Pré-requisitos</span>
-<h2>O que precisa na máquina</h2>
-<p class="sub">Para a demo local gratuita, só isso. Nenhuma conta de terceiro é necessária.</p>
+<span class="chip">Prerequisites</span>
+<h2>What your machine needs</h2>
+<p class="sub">For the free local demo, that's all. No third-party accounts are needed.</p>
 <div class="grid g3">
-<div class="card"><h3>Node.js 20.9+</h3><p>Node 24 é o runtime verificado do projeto.</p><pre><span class="k">node --version</span>  <span class="c"># v24.x</span></pre></div>
-<div class="card"><h3>npm</h3><p>Vem junto com o Node; instala as dependências do monorepo.</p><pre><span class="k">npm --version</span></pre></div>
-<div class="card"><h3>Git</h3><p>Para clonar o repositório.</p><pre><span class="k">git --version</span></pre></div>
+<div class="card"><h3>Node.js 20.9+</h3><p>Node 24 is the project's verified runtime.</p><pre><span class="k">node --version</span>  <span class="c"># v24.x</span></pre></div>
+<div class="card"><h3>npm</h3><p>Included with Node; installs the monorepo dependencies.</p><pre><span class="k">npm --version</span></pre></div>
+<div class="card"><h3>Git</h3><p>To clone the repository.</p><pre><span class="k">git --version</span></pre></div>
 </div>
 </div></section>
 <section id="guia"><div class="wrap">
-<span class="chip">Guia de uso · passo a passo</span>
-<h2>SnagTime rodando em cinco minutos</h2>
-<p class="sub">Comandos reais do repositório. Ao final você tem o app no <code>localhost:3000</code> com login de organizador já criado.</p>
+<span class="chip">User guide · step by step</span>
+<h2>SnagTime up and running in five minutes</h2>
+<p class="sub">Actual repository commands. By the end, you'll have the app running at <code>localhost:3000</code> with an organizer login already created.</p>
 <div class="step"><div class="b">1</div><div>
-<h3>Clonar o repositório</h3>
-<p>Baixe o código e entre na pasta.</p>
+<h3>Clone the repository</h3>
+<p>Download the code and enter the folder.</p>
 <pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/snagtime.git</span>
 <span class="k">cd</span> snagtime</pre>
 </div></div>
 <div class="step"><div class="b">2</div><div>
-<h3>Gerar a configuração local</h3>
-<p>Cria um <code>.env.local</code> ignorado pelo git, gera segredos criptográficos independentes e imprime o login da demo uma vez.</p>
+<h3>Generate the local configuration</h3>
+<p>Creates a <code>.env.local</code> ignored by git, generates independent cryptographic secrets, and prints the demo login once.</p>
 <pre><span class="k">npm run setup</span>
 
-<span class="c"># ou com o seu próprio login de organizador:</span>
+<span class="c"># or with your own organizer login:</span>
 <span class="k">npm run setup</span> -- --email <span class="s">voce@exemplo.com</span> --password <span class="s">"SuaSenhaForte7!"</span></pre>
 </div></div>
 <div class="step"><div class="b">3</div><div>
-<h3>Instalar, migrar e subir</h3>
-<p>Um comando só: instala, aplica as migrações, popula o banco e sobe a demo gratuita.</p>
-<pre><span class="k">npm run demo:free</span>  <span class="c"># abra http://localhost:3000</span></pre>
+<h3>Install, migrate, and deploy</h3>
+<p>One command: installs, runs migrations, seeds the database, and starts the free demo.</p>
+<pre><span class="k">npm run demo:free</span>  <span class="c"># open http://localhost:3000</span></pre>
 </div></div>
 <div class="step"><div class="b">4</div><div>
-<h3>Conferir a configuração</h3>
-<p>Valida a configuração local sem credenciais, se algo não subir como esperado.</p>
+<h3>Check the configuration</h3>
+<p>Validates the local setup without credentials if something doesn’t start as expected.</p>
 <pre><span class="k">npm run setup:check</span></pre>
 </div></div>
 <div class="step"><div class="b">5</div><div>
-<h3>Comandos do dia a dia</h3>
-<p>Desenvolvimento, testes e build de produção.</p>
-<pre><span class="k">npm run dev</span>              <span class="c"># servidor de desenvolvimento</span>
-<span class="k">npm run test</span>             <span class="c"># testes unitários e de contrato</span>
+<h3>Day-to-day commands</h3>
+<p>Development, tests, and production build.</p>
+<pre><span class="k">npm run dev</span>              <span class="c"># development server</span>
+<span class="k">npm run test</span>             <span class="c"># unit and contract tests</span>
 <span class="k">npm run typecheck</span>        <span class="c"># TypeScript</span>
 <span class="k">npm run lint</span>             <span class="c"># ESLint</span>
-<span class="k">npm run build</span>            <span class="c"># build de produção do Next.js</span>
-<span class="k">npm run ci:secret-scan</span>   <span class="c"># varre credenciais no código público</span></pre>
+<span class="k">npm run build</span>            <span class="c"># Next.js production build</span>
+<span class="k">npm run ci:secret-scan</span>   <span class="c"># scans public code for credentials</span></pre>
 </div></div>
 <div class="step"><div class="b">6</div><div>
-<h3>Banco de dados</h3>
-<p><code>db:reset</code> destrói o SQLite local — use só quando quiser uma demo limpa.</p>
+<h3>Database</h3>
+<p><code>db:reset</code> destroys the local SQLite database—use only when you want a clean demo.</p>
 <pre><span class="k">npm run db:generate</span>
 <span class="k">npm run db:migrate</span>
 <span class="k">npm run db:seed</span>
-<span class="k">npm run db:reset</span>        <span class="c"># destrutivo</span></pre>
+<span class="k">npm run db:reset</span>        <span class="c"># destructive</span></pre>
 </div></div>
 <div class="step"><div class="b">7</div><div>
-<h3>Instalar com ajuda de IA</h3>
-<p>O repositório traz um prompt pronto para o Codex ou o Claude Code conduzirem a instalação, parando só nas etapas de conta que só você pode fazer.</p>
-<pre><span class="c"># docs/AI-SETUP.md — copie o prompt do aluno e cole no assistente com:</span>
+<h3>Install with AI assistance</h3>
+<p>The repository includes a ready-to-use prompt for Codex or Claude Code to guide the installation, stopping only at account setup steps that only you can complete.</p>
+<pre><span class="c"># docs/AI-SETUP.md — copy the student's prompt and paste it into the assistant with:</span>
 <span class="s">https://github.com/inematds/snagtime</span></pre>
 </div></div>
 </div></section>
 <section id="integracoes"><div class="wrap">
-<span class="chip">Integrações</span>
-<h2>O que você conecta com as suas contas</h2>
-<p class="sub">O código vem inteiro. As integrações externas continuam sendo suas — e nenhuma delas é necessária para a demo local.</p>
+<span class="chip">Integrations</span>
+<h2>What you connect with your accounts</h2>
+<p class="sub">The full code is included. External integrations are still yours to set up—and none are needed for the local demo.</p>
 <table class="tbl">
-<tr><th>Recurso</th><th>O que você fornece</th><th>Precisa na demo local?</th></tr>
-<tr><td>Banco de dados</td><td>Nada para SQLite; PostgreSQL em produção</td><td>Não</td></tr>
-<tr><td>Hospedagem pública</td><td>Domínio HTTPS + serviço Node e worker de longa duração</td><td>Não</td></tr>
-<tr><td>Google Calendar</td><td>OAuth client ID e client secret</td><td>Não</td></tr>
-<tr><td>E-mail transacional</td><td>Host SMTP, usuário, senha e domínio remetente verificado</td><td>Não</td></tr>
-<tr><td>Pagamentos Stripe</td><td>Chave secreta de teste, publishable key e webhook secret</td><td>Não</td></tr>
+<tr><th>Feature</th><th>What you provide</th><th>Needed for the local demo?</th></tr>
+<tr><td>Database</td><td>Nothing for SQLite; PostgreSQL in production</td><td>No</td></tr>
+<tr><td>Public hosting</td><td>HTTPS domain + Node service and long-running worker</td><td>No</td></tr>
+<tr><td>Google Calendar</td><td>OAuth client ID and client secret</td><td>No</td></tr>
+<tr><td>Transactional email</td><td>SMTP host, username, password, and verified sender domain</td><td>No</td></tr>
+<tr><td>Stripe payments</td><td>Test secret key, publishable key, and webhook secret</td><td>No</td></tr>
 </table>
-<p class="sub" style="margin-top:22px">Callback URLs, variáveis de ambiente e verificação: <code>docs/INTEGRATION-SETUP.md</code>. Deploy público: <code>docs/DEPLOYMENT.md</code>.</p>
+<p class="sub" style="margin-top:22px">Callback URLs, environment variables, and verification: <code>docs/INTEGRATION-SETUP.md</code>. Public deployment: <code>docs/DEPLOYMENT.md</code>.</p>
 </div></section>
 <section id="roadmap"><div class="wrap">
 <span class="chip">Status</span>
-<h2>Onde o projeto está</h2>
-<p class="sub">Honestidade sobre o que é demo e o que é caminho avançado de self-hosting.</p>
-<div class="phase"><div class="tag">Pronto</div><div class="d"><strong>Demo local gratuita</strong><span>SQLite, adaptador de calendário local, caixa de e-mail local e pagamentos stub — para demos, desenvolvimento e experimentação pessoal.</span></div></div>
-<div class="phase"><div class="tag">Pronto</div><div class="d"><strong>Integrações reais</strong><span>Google Calendar (free/busy + criação de evento), SMTP e Stripe Checkout em modo teste, incluindo webhook de confirmação e reembolso.</span></div></div>
-<div class="phase"><div class="tag">Avançado</div><div class="d"><strong>Produção self-hosted</strong><span>PostgreSQL 18 com RLS forçada, credenciais separadas, TLS verificado e ingress autenticado. Precisa de VPS ou plataforma de containers — Vercel e ChatGPT Sites não servem, pelo worker de longa duração.</span></div></div>
-<div class="phase"><div class="tag">Fora</div><div class="d"><strong>Stripe em modo live</strong><span>Esta versão rejeita chaves de modo live de propósito. Não anuncie como processador de pagamentos real sem implementar e auditar o suporte a live mode.</span></div></div>
+<h2>Where the project is</h2>
+<p class="sub">Be honest about what's a demo and what's an advanced self-hosting path.</p>
+<div class="phase"><div class="tag">Ready</div><div class="d"><strong>Free local demo</strong><span>SQLite, a local calendar adapter, a local email inbox, and stub payments—for demos, development, and personal experimentation.</span></div></div>
+<div class="phase"><div class="tag">Ready</div><div class="d"><strong>Real integrations</strong><span>Google Calendar (free/busy + event creation), SMTP, and Stripe Checkout in test mode, including confirmation and refund webhooks.</span></div></div>
+<div class="phase"><div class="tag">Advanced</div><div class="d"><strong>Self-hosted production</strong><span>PostgreSQL 18 with enforced RLS, separate credentials, verified TLS, and authenticated ingress. Requires a VPS or container platform—Vercel and ChatGPT Sites won't work because of the long-running worker.</span></div></div>
+<div class="phase"><div class="tag">Outside</div><div class="d"><strong>Stripe live mode</strong><span>This version intentionally rejects live-mode keys. Don't advertise it as a real payment processor without implementing and auditing live-mode support.</span></div></div>
 </div></section>
 <footer>
 <div class="wrap">
 <div class="pill">Next.js</div><div class="pill">TypeScript</div><div class="pill">Prisma</div><div class="pill">SQLite / PostgreSQL</div><div class="pill">Stripe (test)</div><div class="pill">MIT</div>
-<p style="margin-top:18px">SnagTime · leia o <code>SECURITY.md</code> antes de expor um deploy público ·
+<p style="margin-top:18px">SnagTime · read the <code>SECURITY.md</code> before exposing a public deploy ·
       <a href="https://github.com/inematds/snagtime">inematds/snagtime</a> ·
       <a href="https://inema.club">INEMA.CLUB</a></p>
 </div>
